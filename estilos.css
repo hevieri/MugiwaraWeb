@@ -1,0 +1,285 @@
+/* Reset de estilos básicos */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    background-color: #ffcc00;
+    padding: 20px;
+    position: relative;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.menu-icono {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked + .menu-icono + .navbar {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: #000;
+    font-weight: bold;
+}
+
+.header-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header-txt {
+    max-width: 600px;
+}
+
+.header-txt h1 {
+    font-size: 48px;
+    color: #000;
+}
+
+.header-txt p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #ffcc00;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #333;
+}
+
+.header-img img {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Sección sobre nosotros */
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.about-img img {
+    max-width: 500px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.about-txt {
+    max-width: 600px;
+    margin-left: 20px; 
+}
+
+.about-txt h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.about-txt p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilo general de las secciones */
+.section-container {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.section-img img {
+    max-width: 500px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.section-txt {
+    max-width: 600px;
+    margin-left: 20px; 
+}
+
+.section-txt h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.section-txt p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #ffcc00;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer-social .social-icon {
+    margin: 0 10px;
+    color: #000;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-social .social-icon:hover {
+    color: #333;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #ffcc00;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu-icono {
+        display: block;
+    }
+
+    .header-content-container {
+        flex-direction: column;
+    }
+
+    .header-img {
+        margin-top: 20px;
+    }
+
+    .about-container,
+    .section-container {
+        flex-direction: column;
+    }
+
+    .about-img,
+    .section-img {
+        margin-bottom: 20px;
+    }
+
+    .about-txt,
+    .section-txt {
+        margin-left: 0; /* Remover margen en dispositivos pequeños */
+    }
+}
+.ver-mas {
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    color: #007bff;
+    margin-top: 15px; /* Separación desde arriba */
+}
+
+.ver-mas:hover {
+    text-decoration: underline;
+}
+/* Estilos para la sección de Personajes */
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.section-img {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.section-txt {
+    flex: 2;
+    max-width: 600px;
+}
+
+.section-txt h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section-txt p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.ver-mas {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    color: #007bff;
+    margin-top: 15px;
+}
+
+.ver-mas:hover {
+    text-decoration: underline;
+}
